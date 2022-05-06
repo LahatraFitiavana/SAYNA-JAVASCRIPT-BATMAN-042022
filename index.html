@@ -31,12 +31,12 @@
             <p>Il est vengeur.Il est la nuit.</p>
             <p><b>Il est Batman</b></p>
             <div class="buttons">
-                <button>VOIR LES HEROS</button>
-                <button>VOIR LES ADVERSAIRES</button>
+                <button><a href="#batman-cinema">VOIR LES HEROS</a></button>
+                <button><a href="#nemesis">VOIR LES ADVERSAIRES</a></button>
             </div>
         </div>
         <div class="media">
-            <img  class="to-top" src="./Assets/Logos/logo_bat_flèche.png" alt="" width="80px">
+            <img class="to-top" src="./Assets/Logos/logo_bat_flèche.png" alt="" width="80px">
             <img src="./Assets/Logos/icon_facebook.png" alt="" width="20px">
             <img src="./Assets/Logos/icon_ig.png" alt="" width="20px">
             <img src="./Assets/Logos/icon_tw.png" alt="" width="20px">
@@ -50,7 +50,7 @@
                 <img src="./Assets/Logos/flèche_down_header.png" alt="" width="100px">
             </div>
             <div class="text">
-                <p class="title">BATMAN AU CINEMA</p>
+                <p class="title" id="batman-cinema">BATMAN AU CINEMA</p>
                 <p>Le personnage de Batman est un super héro de l'univers de DC Comics.Il a été créé par le
                     dessinateur
                     Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le comic Book
@@ -61,19 +61,37 @@
                     les derniers:</p>
             </div>
             <div class="images">
-                <img class="batman-img" src="./Assets/Illustrations/Home/Bathome2.png" alt="" width="0%">
-                <img class="batman-img" src="./Assets/Illustrations/Home/Bathome3.png" alt="" width="0%">
-                <img class="batman-img" src="./Assets/Illustrations/Home/Bathome4.png" alt="" width="0%">
+                <div class="image" width="0%">
+                    <img class="batman-img" src="./Assets/Illustrations/Home/Bathome2.png" alt="" width="0%">
+                    <div class="desc">
+                        <img src="./Assets/Illustrations/Home/Ben_Affleck.png" alt="" width="30px">
+                        <p>ben Affleck</p>
+                    </div>
+                </div>
+                <div class="image" width="0%">
+                    <img class="batman-img" src="./Assets/Illustrations/Home/Bathome3.png" alt="" width="0%">
+                    <div class="desc">
+                        <img src="./Assets/Illustrations/Home/Christian_Bale.png" alt="" width="30px">
+                        <p>Christian Bale</p>
+                    </div>
+                </div>
+                <div class="image" width="0%">
+                    <img class="batman-img" src="./Assets/Illustrations/Home/Bathome4.png" alt="" width="0%">
+                    <div class="desc">
+                        <img src="./Assets/Illustrations/Home/Heath_Ledger.png" alt="" width="30px">
+                        <p>Heath Ledger</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="slider">
-        <img src="./Assets/Illustrations/Home/Batslider1.png" alt="">
+        <img src="./Assets/Illustrations/Home/Batslider1.png" alt="" id="slide">
     </div>
     <div class="article">
         <div class="conteneur">
             <div class="text">
-                <p class="title">NEMESIS</p>
+                <p class="title" id="nemesis">NEMESIS</p>
                 <p>Le personnage de Batman est un super héro de l'univers de DC Comics.Il a été créé par le
                     dessinateur
                     Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le comic Book
@@ -84,9 +102,27 @@
                     les derniers:</p>
             </div>
             <div class="images">
-                <img class="batman-img" src="./Assets/Illustrations/Home/Bathome5.png" alt="" width="0%">
-                <img class="batman-img" src="./Assets/Illustrations/Home/Bathome6.png" alt="" width="0%">
-                <img class="batman-img" src="./Assets/Illustrations/Home/Bathome7.png" alt="" width="0%">
+                <div class="image" width="0%">
+                    <img class="batman-img" src="./Assets/Illustrations/Home/Bathome5.png" alt="" width="0%">
+                    <div class="desc">
+                        <img src="./Assets/Illustrations/Home/Paul_Dano.png" alt="" width="30px">
+                        <p>Paul Dano</p>
+                    </div>
+                </div>
+                <div class="image" width="0%">
+                    <img class="batman-img" src="./Assets/Illustrations/Home/Bathome6.png" alt="" width="0%">
+                    <div class="desc">
+                        <img src="./Assets/Illustrations/Home/Ray_Porter.png" alt="" width="30px">
+                        <p>Ray Porter</p>
+                    </div>
+                </div>
+                <div class="image" width="0%">
+                    <img class="batman-img" src="./Assets/Illustrations/Home/Bathome7.png" alt="" width="0%">
+                    <div class="desc">
+                        <img src="./Assets/Illustrations/Home/Robert_Pattinson.png" alt="" width="30px">
+                        <p>Robert Pattinson</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -96,15 +132,17 @@
                 <p class="title multimedia">MULTIMEDIA</p>
             </div>
             <div class="images">
-                <img src="./Assets/Logos/Icones en + dans Home/icon_flèche_1.png" alt="" width="5%" height="5%">
-                <video class="video" src="https://www.youtube.com/watch?v=jXrFsn9pcZY" width="50%"></video>
-                <img src="./Assets/Logos/Icones en + dans Home/icon_flèche_2.png" alt="" width="5%" height="5%">
+                <img id="to-left" src="./Assets/Logos/Icones en + dans Home/icon_flèche_1.png" alt="" width="5%" height="5%">
+                <div class="video-conteneur media-slider">
+                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <img id="to-right" src="./Assets/Logos/Icones en + dans Home/icon_flèche_2.png" alt="" width="5%" height="5%">
             </div>
         </div>
     </div>
     <div class="article">
-        <div class="conteneur">
-            <img class="bathome" src="./Assets/Illustrations/Home/Bathome9_ba.png" alt="" width="0%">
+        <div class="conteneur media-slider" id="bathome" height="500px">
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
     <div class="article contact">
@@ -151,8 +189,8 @@
                 <img src="./Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="" id="opening">
                 <div class="content">
                     <div class="verse">
-                        <b >La seule façon de vivre en ce bas monde,</b>
-                        <b >c'est en dehors des règles.</b>
+                        <b>La seule façon de vivre en ce bas monde,</b>
+                        <b>c'est en dehors des règles.</b>
                     </div>
                     <div class="writer">
                         <p>The Dark Knight:Le Chevalier Noir-</p>

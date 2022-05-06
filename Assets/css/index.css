@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: 'batman';
+    src: url('./../font/batmfa__.ttf');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -13,6 +19,7 @@ p {
 }
 
 .title {
+    font-family: 'batman';
     font-weight: bold;
     position:absolute;
     top:-34%;
@@ -20,7 +27,14 @@ p {
     display: none;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 
+a:hover{
+    color: white;
+}
 
 .top {
     background-image: url('./../Illustrations/Home/Bathome1.png');
@@ -105,7 +119,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    top: 55%;
+    z-index: 8;
     right: 11%;
 }
 
@@ -116,6 +130,12 @@ nav ul li a {
 .article {
     background-color: black;
     padding-top: 15%;
+}
+
+
+.reveal{
+    opacity:1;
+    transition:.5s;
 }
 
 .article .arrow {
@@ -142,6 +162,30 @@ nav ul li a {
     align-items: center;
 }
 
+.article .images .image{
+    position:relative;
+    margin-top: 2%;
+}
+
+.article .images .desc{
+    background-color: #770e07;
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    top: 84%;
+    left: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.article .images .desc p{
+    margin-top:0.2rem;
+}
+
 .article .images img {
     margin: 1%;
 }
@@ -156,6 +200,10 @@ nav ul li a {
 .article video {
     border: 1px white solid;
     border-radius: 20px;
+}
+
+.video-conteneur{
+    width: 50%;
 }
 
 .contact {
