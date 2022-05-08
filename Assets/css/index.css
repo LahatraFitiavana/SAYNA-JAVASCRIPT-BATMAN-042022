@@ -14,6 +14,12 @@ body {
     color: white;
 }
 
+:root{
+    --primary-ad-color:#B11313;
+    --grey-ad-color:#C4C4C4;
+    --black-ad-color:#0D0E09;
+}
+
 p {
     margin: 0;
 }
@@ -49,19 +55,44 @@ a:hover{
     text-decoration: underline;
 }
 
+.vertical{
+    width:0;
+    border:2px solid var(--grey-ad-color);
+    height:5453px;
+    position:absolute;
+    top:0%;
+    z-index: 5;
+}
 
+.horizontal{
+    width:83.5%;
+    border:2px solid var(--grey-ad-color);
+    height:0;
+    position:absolute;
+    top: 120px;
+    left: 102px;
+    z-index: 5;
+}
+
+.v-left{
+    left: 102px;
+}
+
+.v-right{
+    right:102px;
+}
 
 .clear {
     clear: both;
 }
 
-nav {
-    padding: 3% 0;
+nav{
+    padding-top:10%;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 5px solid rgba(255, 255, 2555, 0.5);
+    margin-top: 2%;
 }
 
 
@@ -78,7 +109,7 @@ nav ul {
     flex-direction: row;
     justify-content: space-evenly;
     float: right;
-    margin-top: 0;
+    margin-top:0;
 }
 
 nav ul li a {
@@ -120,7 +151,8 @@ nav ul li a {
     justify-content: space-between;
     position: absolute;
     z-index: 8;
-    right: 11%;
+    right: 63px;
+    top:220px;
 }
 
 .media img {
@@ -131,6 +163,7 @@ nav ul li a {
     background-color: black;
     padding-top: 15%;
 }
+
 
 
 .reveal{
@@ -216,6 +249,11 @@ nav ul li a {
     font-size: 20px;
     font-weight: bolder;
     margin-bottom: 2%;
+    font-family: 'batman';
+    font-weight: bold;
+    position:absolute;
+    top:-18%;
+    left:-100%;
 }
 
 .input {
@@ -269,6 +307,26 @@ nav ul li a {
     text-align: center;
 }
 
+.myModal{
+    position:absolute;
+    top: -12%;
+    margin: auto;
+    z-index: 6;
+    background:radial-gradient(#EDDEBF,#19587D);
+    width: 97%;
+    height: 510px;
+    text-align: center;
+    border-radius: 20px;
+    display: none;
+}
+
+.myModal .modal-content{
+    position:absolute;
+    top:50%;
+    left:38%;
+    width: 40%;
+    border: 0;
+}
 .quote {
     background: black;
     color: white;

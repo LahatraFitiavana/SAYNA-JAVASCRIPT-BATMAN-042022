@@ -1,0 +1,193 @@
+
+@font-face {
+    font-family: 'batman';
+    src: url('./../font/batmfa__.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+:root{
+    --primary-ad-color:#B11313;
+    --grey-ad-color:#C4C4C4;
+    --black-ad-color:#0D0E09;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    font-family: 'batman';
+    font-weight: bold;
+    position:absolute;
+    top:-34%;
+    left:-100%;
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.top {
+    background-image: url('./../Illustrations/Game/Batgame1.png');
+    background-size: cover;
+    padding-bottom: 20%;
+    position: relative;
+    height: 720px;
+}
+
+.actif {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.vertical{
+    width:0;
+    border:2px solid var(--grey-ad-color);
+    height:5453px;
+    position:absolute;
+    top:0%;
+    z-index: 5;
+}
+
+.horizontal{
+    width:83.5%;
+    border:2px solid var(--grey-ad-color);
+    height:0;
+    position:absolute;
+    top: 120px;
+    left: 102px;
+    z-index: 5;
+}
+
+.v-left{
+    left: 102px;
+}
+
+.v-right{
+    right:102px;
+}
+
+.clear {
+    clear: both;
+}
+
+nav{
+    padding-top:10%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+
+.conteneur {
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    position:relative;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    float: right;
+    margin-top:0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.description {
+    width: 40%;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 20%;
+    position:absolute;
+    top:14%;
+    left:-100%;
+}
+
+
+.description button {
+    height: 50px;
+    color: white;
+    background:linear-gradient(to right,white,#770e07);
+    opacity: 0.7;
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+    margin: 0 5%;
+}
+
+.description .buttons {
+    margin: 5%;
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 8;
+    right: 63px;
+    top:220px;
+}
+
+.media img {
+    margin: 10% auto;
+}
+
+.article {
+    background-color: black;
+    padding-top: 15%;
+    height: 700px;;
+}
+
+
+.reveal{
+    opacity:1;
+    transition:.5s;
+}
+
+.article .arrow {
+    margin: auto;
+    width: 100px;
+    margin-bottom: 5%;
+    position:absolute;
+    top: -25%;
+    left:-100%;
+}
+
+.article .quiz{
+    position:absolute;
+    top: 345%;
+    left:5%;
+}
+
+.article .quiz .title{
+    width: 500px;
+}

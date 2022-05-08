@@ -1,9 +1,12 @@
 let menu = document.querySelectorAll('.menu');
 let buttons = document.querySelectorAll('button');
-let yellow = document.querySelector('.yellow');
+let yellows = document.querySelectorAll('.yellow');
 let images = document.querySelectorAll('.image');
 let toLeft = document.querySelector('#to-left');
 let toRight = document.querySelector('#to-right');
+let modal=document.querySelector('#modal');
+let confirmer=document.querySelector('#confirmer');
+
 
 let index = 0;
 let sources1 = [`<iframe width="100%" height="300px" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`, `<iframe width="100%" height="300px" src="https://www.youtube.com/embed/UMgb3hQCb08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`, `<iframe width="100%" height="300px" src="https://www.youtube.com/embed/OiqPQ7L_C00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`]
@@ -48,6 +51,13 @@ function slide(){
 
 window.onload=slide;
 
+
+confirmer.onclick=()=>{
+    modal.style.display='block';
+    setTimeout(()=>{
+        modal.style.display='none';
+        },3000);
+}
 
 toLeft.onclick = () => {
     if (index > 0) {
@@ -97,10 +107,18 @@ buttons.forEach((button) => {
 
 })
 
-yellow.addEventListener('mouseover', () => {
-    yellow.style.filter = "hue-rotate(5deg) grayscale(100%) sepia(90%) saturate(500%) contrast(0.7)";
-
+yellows.forEach((yellow)=>{
+    yellow.addEventListener('mouseover', () => {
+        yellow.style.filter = "hue-rotate(5deg) grayscale(100%) sepia(1000000%) saturate(1000000%) contrast(1)";
+    
+    });
+    
+    yellow.addEventListener('mouseout', () => {
+        yellow.style.filter = "hue-rotate(0deg) grayscale(100%) sepia(100%) saturate(100%) contrast(1)";
+    
+    });
 })
+
 
 images.forEach((image) => {
     image.addEventListener('mouseover', () => {
@@ -134,6 +152,9 @@ $(document).ready(function () {
     }, 2500);
     $('.title').animate({
         left: '0%'
+    }, 2500);
+    $('.c-title').animate({
+        left: '30%'
     }, 2500);
     $(document).ready(function () {
         $('.description').animate({
